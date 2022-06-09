@@ -1,0 +1,91 @@
+.Favorites {
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 600px;
+}
+
+.Favorites h2 {
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 200;
+  margin: 10px 0 20px;
+  margin-top: 125px;
+  border-bottom: 1px solid #000;
+  line-height: 0.01em;
+  width: 100%;
+}
+
+.Favorites h2 span {
+  background-color: white;
+  padding: 0 10px;
+  position: relative;
+  top: 5px;
+}
+
+.Favorites ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Favorites .RecipeCard {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.Favorites img {
+  width: 200px;
+  height: 148px;
+}
+
+.Favorites p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Favorites .fa-heart {
+  position: absolute;
+  font-size: 40px;
+  left: 155px;
+  top: 125px;
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.Favorites .fa-solid {
+  color: #ad2632;
+}
+
+@media only screen and (min-width: 1000px) {
+  .Favorites .RecipeCard {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Favorites img {
+    width: 280px;
+    height: 200px;
+  }
+
+  .Favorites p {
+    font-size: 20px;
+  }
+
+  .Favorites .fa-heart {
+    font-size: 50px;
+    left: 230px;
+    top: 165px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+  }
+  .Favorites .fa-solid {
+    color: #ad2632;
+  }
+}

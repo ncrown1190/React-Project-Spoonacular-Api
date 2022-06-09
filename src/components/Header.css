@@ -1,0 +1,31 @@
+.header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+.header .icon-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-name {
+  display: flex;
+  justify-content: center;
+}
+.header .fa-solid {
+  font-size: 40px;
+  padding: 15px;
+  color: #ad2632;
+}
+.header img {
+  font-size: 30px;
+  padding: 15px;
+}
+.header img:hover {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.header .fa-solid:hover {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}

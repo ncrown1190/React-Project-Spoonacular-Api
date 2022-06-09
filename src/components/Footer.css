@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #85bfb2;
+  /* background-color: #c4f3e8; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: small;
+  font-weight: 500;
+  color: white;
+}
+.logo-name {
+  margin-left: 10px;
+}
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+.icons-container img {
+  margin-left: 5px;
+}

@@ -1,0 +1,7 @@
+Main {
+  display: flex;
+  /* height: 100vh; */
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 100px; */
+}
