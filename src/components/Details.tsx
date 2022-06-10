@@ -8,9 +8,9 @@ import { getRecipeById, getRecipesByQuery } from "../services/SpoonApiService";
 import "./Details.css";
 import RecipeCard from "./RecipeCard";
 
-interface Props {
-  singleRecipeCard: Recipe;
-}
+// interface Props {
+//   singleRecipeCard: Recipe;
+// }
 
 const Details = () => {
   const [recipe, setRecipe] = useState<SingleRecipeResponse | undefined>();
@@ -28,16 +28,15 @@ const Details = () => {
       <div className="recipe-container">
         <div className="recipe-img-p-container">
           <div className="recipe-image">
-            {/* <img
-              src={singleRecipeCard.image!}
-              alt={singleRecipeCard.title}
-            /> */}
             <img src={recipe?.image} alt={recipe?.title} />
           </div>
         </div>
         <div className="title-ingredients-container">
           <div className="favorite-icon-container">
             <p className="details-title">{recipe?.title}</p>
+        <div>
+          <p>Originated by: ****URL GOES HERE***</p> 
+        </div>
             {isFav(recipe?.id!) ? (
               <i
                 className="fa-solid fa-heart"
@@ -85,13 +84,12 @@ const Details = () => {
       <div className="instruction-container">
         <p className="instruction-title">Instructions:</p>
         <ol className="instruction-list">
-          {recipe?.analyzedInstructions.map((item) =>
-            item.step.map((step) => (
-              <li className="instruction-steps">{step.step}</li>
-            ))
-          )}
+          {recipe?.analyzedInstructions[0]?.steps.map((item) => <li className="instruction-steps">{item.step}</li>)}
         </ol>
       </div>
+
+
+
     </div>
   );
 };
