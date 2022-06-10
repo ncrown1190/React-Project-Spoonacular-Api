@@ -10,7 +10,7 @@ export default function SearchRecipe() {
   const [query, setQuery] = useState("");
   const [type, setMeal] = useState("");
   const [diet, setDiet] = useState("");
-  // const [searchRecipe, setSearchRecipe] = useState<SearchResponse>();
+  const [searchRecipe, setSearchRecipe] = useState<SearchResponse>();
 
   const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ export default function SearchRecipe() {
     }
     navigate(`/recipes/complexSearch?${new URLSearchParams({ ...params })}`);
     // getRecipesByQuery("apple").then((response) => console.log(response)); // save it to state and then put it down to JSX mapping
-    // getRecipesByQuery(query).then((response) => setSearchRecipe(response)); // save it to state and then put it down to JSX mapping
+    getRecipesByQuery(query).then((response) => setSearchRecipe(response)); // save it to state and then put it down to JSX mapping
     setQuery("");
     setMeal("");
     setDiet("");
@@ -95,11 +95,11 @@ export default function SearchRecipe() {
           </select>
           <i className="fa-solid fa-angle-down"></i>
         </div>
-        {/* <div>
+        <div>
           {searchRecipe?.results.map((recipe, index) => (
             <img key={index} src={recipe.image} />
           ))}
-        </div> */}
+        </div>
         {/* <div>
           <input
             className="calories"
