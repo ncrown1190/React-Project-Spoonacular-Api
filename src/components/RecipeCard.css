@@ -11,6 +11,8 @@
   margin-top: 20px;
   width: 380px;
   height: 281px;
+  /* max-width: 100%;
+  max-height: 100%; */
 }
 
 .RecipeCard img:hover {
@@ -29,4 +31,7 @@
 
 .RecipeCard .fa-solid {
   color: #ad2632;
+}
+p {
+  font-weight: bolder;
 }

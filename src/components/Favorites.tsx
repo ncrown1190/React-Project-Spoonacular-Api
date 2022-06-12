@@ -8,7 +8,7 @@ const Favorites = () => {
   return (
     <div className="Favorites">
       <h2>
-        <span>YOUR FAVORITE RECIPEASE</span>
+        <span>YOUR FAVORITE RECIPE</span>
       </h2>
       <ul>
         {favorites.map((favorite) => {

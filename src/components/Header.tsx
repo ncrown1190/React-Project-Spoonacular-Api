@@ -11,7 +11,9 @@ export default function Header() {
       className="header"
       style={{
         background:
-          path === "/" || path === "/recipes/complexSearch" ? "#85BFB2" : "black",
+          path === "/" || path === "/recipes/complexSearch"
+            ? "#85BFB2"
+            : "black",
         marginTop: 0,
         position: "relative",
       }}
@@ -21,7 +23,7 @@ export default function Header() {
           <img src={hat} alt="chef hat" />
           <h1
             onClick={() => {
-              navigate("/recipes/complexSearch");
+              navigate("/");
             }}
           >
             Digital Chef
