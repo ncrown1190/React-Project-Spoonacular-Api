@@ -1,4 +1,4 @@
-import hat from "../assets/hat1.png";
+import hat from "../assets/chef-hat.png";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import "./Header.css";
 

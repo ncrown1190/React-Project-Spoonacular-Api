@@ -11,7 +11,7 @@
   padding: 20px;
   border-radius: 20px;
   border: 2px solid #85BFB2;
-  width: 25%;
+  width: 200px;
   font-family: "Roboto", sans-serif;
   /* font-family: "Inter", sans-serif; */
 }
@@ -22,4 +22,11 @@
   margin: 10px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  #emailInput {
+    width: 250px;
+  }
 }

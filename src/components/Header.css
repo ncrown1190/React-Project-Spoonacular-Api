@@ -3,6 +3,8 @@
   position: fixed;
   width: 100%;
   color: white;
+  font-family: 'Bungee Shade';
+  align-items: center;
 }
 .header .icon-container {
   position: relative;
@@ -13,7 +15,9 @@
 .logo-name {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .header .fa-solid {
   font-size: 40px;
   padding: 15px;
@@ -22,10 +26,29 @@
 .header img {
   font-size: 30px;
   padding: 15px;
+  height:60px;
+  margin-right:15px;
 }
+
 .header img:hover {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  transform: rotate(60deg);
 }
+
 .header .fa-solid:hover {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-name {
+    font-size:larger;
+  }
+
+  .header img {
+    height: 70px;
+  }
+
+  .header .fa-solid {
+    font-size:larger;
+  }
 }

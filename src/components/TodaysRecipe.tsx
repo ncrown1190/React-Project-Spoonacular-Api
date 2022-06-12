@@ -34,7 +34,7 @@ const TodaysRecipe = () => {
     <div className="TodaysBox">
       <h2>
         {/* <h2 className={`${searchTerm || mealType || diet ? "hide" : ""} `}> */}
-        <span>TODAY'S RECIPEASE</span>
+        <span>TODAY'S RECIPES</span>
       </h2>
 
       <ul>

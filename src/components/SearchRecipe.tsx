@@ -52,7 +52,7 @@ export default function SearchRecipe() {
         />
         <input
           className="SearchBar"
-          placeholder="search recipe"
+          placeholder="Search Recipes"
           name="SearchBar"
           value={query}
           id="SearchBar"
