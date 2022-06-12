@@ -12,6 +12,10 @@ const RecipeCard = ({ singleRecipeCard }: Props) => {
   const { isFav, removeFavorite, addFavorite } = useContext(FavoritesContext);
 
   return (
+    <div id="RecipeCard">
+      <div>
+      <p>{singleRecipeCard.title}</p>
+      </div>
     <li className="RecipeCard">
       <Link to={`/recipes/${encodeURIComponent(singleRecipeCard.id)}/details`}>
         <img src={singleRecipeCard.image} alt={singleRecipeCard.title} />
@@ -27,9 +31,8 @@ const RecipeCard = ({ singleRecipeCard }: Props) => {
           onClick={() => addFavorite(singleRecipeCard)}
         ></i>
       )}
-      <p>{singleRecipeCard.title}</p>
     </li>
+    </div>
   );
-};
-
+  }
 export default RecipeCard;

@@ -23,4 +23,5 @@ export default interface SingleRecipeResponse {
   cuisines: string[];
   dishTypes: string[];
   diets: string[];
+  sourceUrl: string;
 }
