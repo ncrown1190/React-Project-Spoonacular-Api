@@ -7,8 +7,8 @@ const Favorites = () => {
   const { favorites } = useContext(FavoritesContext);
   return (
     <div className="Favorites">
-      <h2>
-        <span>YOUR FAVORITE RECIPE</span>
+      <h2
+        <span>YOUR FAVORITE RECIPES</span>
       </h2>
       <ul>
         {favorites.map((favorite) => {

@@ -38,25 +38,23 @@ export default function SearchRecipe() {
   };
   return (
     <div>
-      <form className="SearchBox" onSubmit={submitHandler}>
-        <div className="searchBar-icon">
-          <img
-            src={searchIcon}
-            alt="search icon"
-            onClick={submitHandler}
-            className="searchIcon"
-          />
-          <input
-            className="SearchBar"
-            placeholder="search recipe"
-            name="SearchBar"
-            value={query}
-            id="SearchBar"
-            required
-            onChange={(e) => setQuery(e.target.value)}
-          ></input>
-        </div>
-
+    <form className="SearchBox" onSubmit={submitHandler}>
+      <div className="searchBar-icon">
+        <img
+          src={searchIcon}
+          alt="search icon"
+          onClick={submitHandler}
+          className="searchIcon"
+        />
+        <input
+          className="SearchBar"
+          placeholder="Search Recipes"
+          name="SearchBar"
+          value={query}
+          id="SearchBar"
+          onChange={(e) => setQuery(e.target.value)}
+        ></input>
+      </div>
         <div className="drop-down-container">
           <div className="meal-type-container">
             <select
