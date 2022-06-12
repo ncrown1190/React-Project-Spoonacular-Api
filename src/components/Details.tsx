@@ -7,6 +7,7 @@ import Recipe from "../models/Recipe";
 import { getRecipeById, getRecipesByQuery } from "../services/SpoonApiService";
 import "./Details.css";
 import RecipeCard from "./RecipeCard";
+import { title } from "process";
 
 // interface Props {
 //   singleRecipeCard: Recipe;
@@ -35,7 +36,7 @@ const Details = () => {
           <div className="favorite-icon-container">
             <p className="details-title">{recipe?.title}</p>
         <div>
-          <p>Originated by: ****URL GOES HERE***</p> 
+        <a href={recipe?.sourceUrl}> Visit Original</a>
         </div>
             {isFav(recipe?.id!) ? (
               <i

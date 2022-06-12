@@ -13,7 +13,7 @@ export default function Header() {
         background:
           path === "/" || path === "/recipes/complexSearch"
             ? "#85BFB2"
-            : "black",
+            : "#85BFB2",
         marginTop: 0,
         position: "relative",
       }}

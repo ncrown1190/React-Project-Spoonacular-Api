@@ -30,8 +30,8 @@ export default function SearchRecipe() {
       params.diet = diet;
     }
     navigate(`/recipes/complexSearch?${new URLSearchParams({ ...params })}`);
-    getRecipesByQuery("apple").then((response) => console.log(response)); // save it to state and then put it down to JSX mapping
-    getRecipesByQuery(query).then((response) => setSearchRecipe(response)); // save it to state and then put it down to JSX mapping
+    // getRecipesByQuery(query).then((response) => console.log(response)); // save it to state and then put it down to JSX mapping
+    getRecipesByQuery(params).then((response) => setSearchRecipe(response)); // save it to state and then put it down to JSX mapping
     setQuery("");
     setMeal("");
     setDiet("");
@@ -90,7 +90,6 @@ export default function SearchRecipe() {
             </select>
             <i className="fa-solid fa-angle-down"></i>
           </div>
-
           {/* <div>
           <input
             className="calories"
@@ -105,7 +104,7 @@ export default function SearchRecipe() {
         </div>
       </form>
       <div>
-        <div className="searchResults">
+        <div className="searchResults" onSubmit={submitHandler}>
           {searchRecipe?.results.map((recipe, index) => (
             // <img key={index} src={recipe.image} alt={recipe.title} />
             <RecipeCard key={recipe.id} singleRecipeCard={recipe} />
