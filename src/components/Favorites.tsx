@@ -7,7 +7,7 @@ const Favorites = () => {
   const { favorites } = useContext(FavoritesContext);
   return (
     <div className="Favorites">
-      <h2>
+      <h2
         <span>YOUR FAVORITE RECIPES</span>
       </h2>
       <ul>

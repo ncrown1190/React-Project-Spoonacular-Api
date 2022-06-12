@@ -8,7 +8,7 @@ interface Steps {
 }
 
 interface AnalyzedInstructions {
-  step: Steps[];
+  steps: Steps[];
 }
 
 export default interface SingleRecipeResponse {

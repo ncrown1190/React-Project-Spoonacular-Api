@@ -23,7 +23,7 @@ export function getRecipeById(id: string): Promise<SingleRecipeResponse> {
   return axios
     .get(`https://api.spoonacular.com/recipes/${id}/information`, {
       params: {
-        apiKey: "108cb1962dea4e15a78c17d9914f1dda",
+        apiKey: "54cc4cb4fb0146819b9958a53e62d454",
         includeNutrition: false,
       },
     })
