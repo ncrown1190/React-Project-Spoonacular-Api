@@ -6,7 +6,7 @@ import SearchResponse from "../models/SearchResponse";
 export function getRandomRecipe(): Promise<RecipeResponse> {
   return axios
     .get(
-      "https://api.spoonacular.com/recipes/random?number=3&tags=&apiKey=108cb1962dea4e15a78c17d9914f1dda"
+      "https://api.spoonacular.com/recipes/random?number=3&tags=&apiKey=1cbba6ef40bb4017ace4ef78a038ad05"
     )
     .then((response) => response.data);
 }
@@ -14,7 +14,7 @@ export function getRandomRecipe(): Promise<RecipeResponse> {
 export function getRecipesByQuery(query: string): Promise<SearchResponse> {
   return axios
     .get(
-      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=2&apiKey=108cb1962dea4e15a78c17d9914f1dda&includeNutrition=false`
+      `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=2&apiKey=1cbba6ef40bb4017ace4ef78a038ad05&includeNutrition=false`
     )
     .then((response) => response.data);
 }

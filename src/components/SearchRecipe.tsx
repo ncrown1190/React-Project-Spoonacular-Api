@@ -30,7 +30,7 @@ export default function SearchRecipe() {
       params.diet = diet;
     }
     navigate(`/recipes/complexSearch?${new URLSearchParams({ ...params })}`);
-    // getRecipesByQuery("apple").then((response) => console.log(response)); // save it to state and then put it down to JSX mapping
+    getRecipesByQuery("apple").then((response) => console.log(response)); // save it to state and then put it down to JSX mapping
     getRecipesByQuery(query).then((response) => setSearchRecipe(response)); // save it to state and then put it down to JSX mapping
     setQuery("");
     setMeal("");
