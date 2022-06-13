@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   color: black;
-  font-family: 'Bungee Shade';
+  font-family: "Bungee Shade";
   align-items: center;
 }
 .header .icon-container {
@@ -26,8 +26,8 @@
 .header img {
   font-size: 30px;
   padding: 15px;
-  height:60px;
-  margin-right:15px;
+  height: 60px;
+  margin-right: 15px;
 }
 
 .header img:hover {
@@ -41,7 +41,7 @@
 
 @media only screen and (min-width: 768px) {
   .logo-name {
-    font-size:larger;
+    font-size: larger;
   }
 
   .header img {

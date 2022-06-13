@@ -14,25 +14,29 @@ const RecipeCard = ({ singleRecipeCard }: Props) => {
   return (
     <div id="RecipeCard">
       <div>
-      <p>{singleRecipeCard.title}</p>
+        <p>{singleRecipeCard.title}</p>
       </div>
-    <li className="RecipeCard">
-      <Link to={`/recipes/${encodeURIComponent(singleRecipeCard.id)}/details`}>
-        <img src={singleRecipeCard.image} alt={singleRecipeCard.title} />
-      </Link>
-      {isFav(singleRecipeCard.id) ? (
-        <i
-          className="fa-solid fa-heart"
-          onClick={() => removeFavorite(singleRecipeCard.id)}
-        ></i>
-      ) : (
-        <i
-          className="fa-regular fa-heart"
-          onClick={() => addFavorite(singleRecipeCard)}
-        ></i>
-      )}
-    </li>
+
+      <li className="RecipeCard">
+        <Link
+          to={`/recipes/${encodeURIComponent(singleRecipeCard.id)}/details`}
+        >
+          <img src={singleRecipeCard.image} alt={singleRecipeCard.title} />
+        </Link>
+        {isFav(singleRecipeCard.id) ? (
+          <i
+            className="fa-solid fa-heart"
+            onClick={() => removeFavorite(singleRecipeCard.id)}
+          ></i>
+        ) : (
+          <i
+            className="fa-regular fa-heart"
+            onClick={() => addFavorite(singleRecipeCard)}
+          ></i>
+        )}
+        {/* <p>{singleRecipeCard.title}</p> */}
+      </li>
     </div>
   );
-  }
+};
 export default RecipeCard;

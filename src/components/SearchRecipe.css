@@ -50,7 +50,7 @@ input {
   display: flex;
   justify-content: center;
   width: 200px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   margin-left: 15px;
 }
 
@@ -103,14 +103,14 @@ input {
 }
 .searchResults img {
   /* margin-left: 50px; */
-  width: 380px;
-  height: 281px;
+  width: 280px;
+  height: 200px;
   padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .searchResults {
-    display: flex; 
+    display: flex;
     flex-direction: row;
   }
 }

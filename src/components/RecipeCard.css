@@ -2,32 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- margin: 0px 30px 0px 30px;
-
 }
-
 .RecipeCard {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   position: relative;
-}
-
-.RecipeCard p {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .RecipeCard img {
   margin-top: 20px;
-  width: 380px;
-  height: 281px;
-  /* max-width: 100%;
-  max-height: 100%; */
+  width: 280px;
+  height: 200px;
+  /* width: 200px;
+  height: 140px; */
 }
 
 .RecipeCard img:hover {
@@ -38,7 +28,7 @@
   position: absolute;
   font-size: 20px;
   right: 20px;
-  top: 230px;
+  top: 160px;
   color: white;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
   z-index: 4;
@@ -49,4 +39,6 @@
 }
 p {
   font-weight: bolder;
+  font-size: 16px;
+  text-transform: uppercase;
 }
