@@ -7,7 +7,7 @@ import SearchResponse from "../models/SearchResponse";
 export function getRandomRecipe(): Promise<RecipeResponse> {
   return axios
     .get(
-      "https://api.spoonacular.com/recipes/random?number=4&tags=&apiKey=0af608f360ec471f896ac76414b99cb4"
+      "https://api.spoonacular.com/recipes/random?number=6&tags=&apiKey=0af608f360ec471f896ac76414b99cb4"
     )
     .then((response) => response.data);
 }
