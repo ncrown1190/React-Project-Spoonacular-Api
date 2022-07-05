@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-Project-Spoonacular-Api/static/css/main.4a0b54d1.css",
+    "main.js": "/React-Project-Spoonacular-Api/static/js/main.0cd4ad0b.js",
+    "static/js/787.2624fafe.chunk.js": "/React-Project-Spoonacular-Api/static/js/787.2624fafe.chunk.js",
+    "static/media/chef-hat.png": "/React-Project-Spoonacular-Api/static/media/chef-hat.9906cd97e578784f0e3a.png",
+    "static/media/instagram.svg": "/React-Project-Spoonacular-Api/static/media/instagram.be1a595ca9294ec84829e0d2e94c65fa.svg",
+    "index.html": "/React-Project-Spoonacular-Api/index.html",
+    "static/media/twitter.svg": "/React-Project-Spoonacular-Api/static/media/twitter.f1a979bbdd71da29039365424eea2eff.svg",
+    "static/media/search1.svg": "/React-Project-Spoonacular-Api/static/media/search1.fe5c6a396841a2df6441d16317f0935b.svg",
+    "static/media/facebook.svg": "/React-Project-Spoonacular-Api/static/media/facebook.49e59e9fcb0457125497c19b21e6bce0.svg",
+    "main.4a0b54d1.css.map": "/React-Project-Spoonacular-Api/static/css/main.4a0b54d1.css.map",
+    "main.0cd4ad0b.js.map": "/React-Project-Spoonacular-Api/static/js/main.0cd4ad0b.js.map",
+    "787.2624fafe.chunk.js.map": "/React-Project-Spoonacular-Api/static/js/787.2624fafe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a0b54d1.css",
+    "static/js/main.0cd4ad0b.js"
+  ]
+}
